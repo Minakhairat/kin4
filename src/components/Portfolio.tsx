@@ -4,14 +4,9 @@ import { Language } from '../types';
 import {
   Instagram,
   ExternalLink,
-  MessageCircle,
-  MapPin,
-  Sparkles,
-  Camera,
-  Film,
   Mic,
-  CheckCircle2,
-  Share2,
+  Film,
+  Camera,
 } from 'lucide-react';
 
 interface PortfolioProps {

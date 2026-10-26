@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PODCAST_PACKAGES, REELS_PACKAGES, ADDONS_DATA, COMPANY_INFO } from '../data/content';
 import { Language, PricingPackage } from '../types';
-import { Check, Star, Calculator, Image as ImageIcon, MessageCircle, Calendar, Plus, Sparkles, ShieldCheck } from 'lucide-react';
+import { Check, Star, Calculator, Image as ImageIcon, MessageCircle, Calendar, Sparkles } from 'lucide-react';
 
 interface PricingCalculatorProps {
   lang: Language;

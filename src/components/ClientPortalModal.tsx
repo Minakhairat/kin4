@@ -781,7 +781,13 @@ export const ClientPortalModal: React.FC<ClientPortalModalProps> = ({
 
               <div className="flex items-center justify-between pt-2">
                 <button
-                  onClick={() => window.print()}
+                  onClick={() => {
+                    try {
+                      window.print();
+                    } catch {
+                      // iframe safe fallback
+                    }
+                  }}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#C82626] text-white text-xs font-bold hover:bg-[#a51e1e] cursor-pointer shadow-md"
                 >
                   <Printer className="w-4 h-4" />

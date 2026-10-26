@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { COMPANY_INFO, PODCAST_PACKAGES, REELS_PACKAGES } from '../data/content';
 import { Language, BookingFormData } from '../types';
-import { X, Send, CheckCircle2, Phone, MessageCircle } from 'lucide-react';
+import { X, CheckCircle2, MessageCircle } from 'lucide-react';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -54,11 +54,6 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
     const waUrl = `https://wa.me/${COMPANY_INFO.whatsappNumbers[0]}?text=${encodeURIComponent(msg)}`;
     setWhatsAppUrl(waUrl);
-    try {
-      window.open(waUrl, '_blank', 'noopener,noreferrer');
-    } catch {
-      // safe fallback for restricted iframe sandbox
-    }
   };
 
   return (
