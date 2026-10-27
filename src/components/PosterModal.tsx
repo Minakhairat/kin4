@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { COMPANY_INFO } from '../data/content';
 import { Language } from '../types';
-import { X, MessageCircle, ExternalLink } from 'lucide-react';
+import { X, Download, MessageCircle, ExternalLink } from 'lucide-react';
 
 interface PosterModalProps {
   initialType: 'podcasts' | 'reels';

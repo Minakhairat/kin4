@@ -3,10 +3,15 @@ import { COMPANY_INFO } from '../data/content';
 import { Language } from '../types';
 import {
   MessageCircle,
+  ArrowRight,
+  ArrowLeft,
   MapPin,
   Instagram,
   ExternalLink,
+  Sparkles,
+  CheckCircle2,
   Mic,
+  Film,
   Camera,
 } from 'lucide-react';
 

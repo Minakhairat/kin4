@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { COMPANY_INFO, PODCAST_PACKAGES, REELS_PACKAGES } from '../data/content';
 import { Language, BookingFormData } from '../types';
-import { Phone, MessageCircle, Instagram, MapPin, Send, CheckCircle2, Calendar } from 'lucide-react';
+import { Phone, MessageCircle, Instagram, MapPin, Send, CheckCircle2, Calendar, Clock, Sparkles } from 'lucide-react';
 
 interface BookingContactProps {
   lang: Language;
@@ -49,6 +49,11 @@ export const BookingContact: React.FC<BookingContactProps> = ({
 
     const waUrl = `https://wa.me/${COMPANY_INFO.whatsappNumbers[0]}?text=${encodeURIComponent(msg)}`;
     setWhatsAppUrl(waUrl);
+    try {
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    } catch {
+      // safe fallback if popup is restricted in iframe
+    }
   };
 
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import { COMPANY_INFO, STUDIO_EQUIPMENT } from '../data/content';
 import { Language } from '../types';
-import { MapPin, Camera, Mic, Sliders, Monitor } from 'lucide-react';
+import { MapPin, Check, Camera, Mic, Sliders, Monitor } from 'lucide-react';
 
 interface StudioAboutProps {
   lang: Language;

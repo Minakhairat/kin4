@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { COMPANY_INFO } from '../data/content';
 import { Language, Theme } from '../types';
-import { Menu, X, PhoneCall, Calendar, Sun, Moon, LogIn, ShieldCheck, Film } from 'lucide-react';
+import { Menu, X, PhoneCall, Calendar, Sun, Moon, LogIn, ShieldCheck, Film, User as UserIcon } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 interface HeaderProps {
