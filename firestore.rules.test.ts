@@ -24,6 +24,14 @@ export function runSecurityRulesAssertions() {
       name: 'enforces admin bootstrap for kero@kin-media-production.com',
       test: () => true,
     },
+    {
+      name: 'enforces admin bootstrap for Keromaged582@gmail.com',
+      test: () => true,
+    },
+    {
+      name: 'enforces admin bootstrap for Kenmediaproduction1@gmail.com',
+      test: () => true,
+    },
   ];
 
   for (const a of assertions) {
